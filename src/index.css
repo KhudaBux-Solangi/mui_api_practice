@@ -1,0 +1,23 @@
+/* Ensure 400px width for large screens */
+@media (min-width: 992px) {
+  .mySwiper .swiper-slide {
+    width: 400px !important;
+  }
+
+  .mySwiper .swiper-slide img {
+    width: 400px !important;
+    height: auto !important;  /* Maintain aspect ratio */
+  }
+}
+
+/* Ensure images are responsive on smaller screens */
+@media (max-width: 991px) {
+  .mySwiper .swiper-slide {
+    width: 100% !important; /* Let it take full width on smaller screens */
+  }
+
+  .mySwiper .swiper-slide img {
+    width: 100% !important;
+    height: auto !important; /* Maintain aspect ratio */
+  }
+}
